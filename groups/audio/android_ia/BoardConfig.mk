@@ -4,6 +4,8 @@ BOARD_USES_GENERIC_AUDIO ?= false
 # Audio HAL selection Flag default setting.
 #  INTEL_AUDIO_HAL:= audio     -> baseline HAL
 #  INTEL_AUDIO_HAL:= audio_pfw -> PFW-based HAL
-INTEL_AUDIO_HAL := audio
+INTEL_AUDIO_HAL := audio_pfw
+PFW_LEGACY_ALSA := false
 # Use XML audio policy configuration file
 USE_XML_AUDIO_POLICY_CONF ?= 1
+
